@@ -1,0 +1,38 @@
+STEP 1: 貼在head中間
+
+<title>中國科技大學體育室</title>
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+</head>
+
+
+
+STEP 2: 貼在</body>前面
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+
+<script>
+$(function(){
+       $('.flexslider').flexslider({
+                directionNav: true,
+                pauseOnAction: false
+       });
+});
+
+</script>
+
+</body>
+
+
+
+STEP:3 取代圖片
+
+<div class="flexslider">
+   <ul class="slides">
+      <li style="background:url(images/a1.jpg) 50% 0 no-repeat;"></a></li>
+      <li style="background:url(images/a2.jpg) 50% 0 no-repeat;"></a></li>
+      <li style="background:url(images/a3.jpg) 50% 0 no-repeat;"></a></li>
+      <li style="background:url(images/a4.jpg) 50% 0 no-repeat;"></a></li>
+      <li style="background:url(images/candy.jpg) 50% 0 no-repeat;"></a></li>       
+   </ul>
+</div>
