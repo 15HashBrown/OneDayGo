@@ -1,0 +1,47 @@
+
+between title and head closing tag
+
+<title>無標題文件</title>
+<link rel="stylesheet" href="css/lightbox.min.css">
+</head>
+
+
+
+
+
+<table width="600" border="0" align="center" cellpadding="1">
+  <tbody>
+    <tr>
+      <td align="center"><a href="a-3.html"><img src="images/n28.jpg" alt="" width="120" height="80" id="a1" onMouseOver="MM_swapImage('a1','','images/about_over.gif',1)" onMouseOut="MM_swapImgRestore()"/></a></td>
+      <td align="center"><a href="a-04.html"><img src="images/n29.jpg" alt="" width="120" height="80" id="a2" onMouseOver="MM_swapImage('a2','','images/rooms_over.gif',1)" onMouseOut="MM_swapImgRestore()"/></a></td>
+      <td align="center"><a href="a-05.html"><img src="images/n30.jpg" alt="" width="120" height="80" id="a3" onMouseOver="MM_swapImage('a3','','images/reservations_over.gif',1)" onMouseOut="MM_swapImgRestore()"/></a></td>
+      <td align="center"><a href="a-05.html"><img src="images/n31.jpg" alt="" width="120" height="80" id="a3" onMouseOver="MM_swapImage('a3','','images/reservations_over.gif',1)" onMouseOut="MM_swapImgRestore()"/></a></td>
+      <td align="center"><a href="a-05.html"><img src="images/n32.jpg" alt="" width="120" height="80" id="a3" onMouseOver="MM_swapImage('a3','','images/reservations_over.gif',1)" onMouseOut="MM_swapImgRestore()"/></a></td>
+      <td align="center"><a href="a-05.html"><img src="images/n33.jpg" alt="" width="120" height="80" id="a3" onMouseOver="MM_swapImage('a3','','images/reservations_over.gif',1)" onMouseOut="MM_swapImgRestore()"/></a></td>
+      <td align="center"><a href="a-05.html"><img src="images/n34.jpg" alt="" width="120" height="80" id="a3" onMouseOver="MM_swapImage('a3','','images/reservations_over.gif',1)" onMouseOut="MM_swapImgRestore()"/></a></td>
+      <td align="center"><a href="a-05.html"><img src="images/n35.jpg" alt="" width="120" height="80" id="a3" onMouseOver="MM_swapImage('a3','','images/reservations_over.gif',1)" onMouseOut="MM_swapImgRestore()"/></a></td>
+      <td align="center"><a href="a-05.html"><img src="images/n30.jpg" alt="" width="120" height="80" id="a3" onMouseOver="MM_swapImage('a3','','images/reservations_over.gif',1)" onMouseOut="MM_swapImgRestore()"/></a></td>
+      
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+before body colsing tag....
+
+ <script src="js/lightbox-plus-jquery.min.js"></script>
+</body>
+
+
+on the hyperlink 
+
+<p align="center"><a href="images/thumb-1.jpg" rel="lightbox[roadtrip]" title="可愛的小貓咪"><img border="0" src="images/thumb-1.jpg" width="250" height="157"></a>
