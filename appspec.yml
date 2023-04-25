@@ -5,11 +5,11 @@ files:
     destination: /var/www/html/
     
 permissions:
-  - object: /
+  - object: /var/www/html/scripts/
     pattern: "**"
     owner: ec2-user
     group: ec2-user
-    
+    mode: 644
 hooks:
   ApplicattionStop:
     - location: scripts/stop_server.sh
