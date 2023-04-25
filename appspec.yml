@@ -12,27 +12,27 @@ permissions:
     mode: 755
 
 hooks:
-  ApplicattionStop:
-    - location: /var/www/html/scripts/stop_server.sh
+ApplicattionStop:
+    - location: scripts/stop_server.sh
       timeout: 180
       runas: ec2-user
       
 AfterInstall:
-  - location: /var/www/html/scripts/after_install.sh
+  - location: scripts/after_install.sh
     timeout: 180
     runas: ec2-user
     
 BeforeInstall:
-  - location: /var/www/html/scripts/install_dependencies.sh
+  - location: scripts/install_dependencies.sh
     timeout: 180
     runas: ec2-user
     
 ApplicationStart:
-  - location: /var/www/html/scripts/start_server.sh
+  - location: scripts/start_server.sh
     timeout: 180
     runas: ec2-user
     
 ValidateService:
-  - location: /var/www/html/scrpts/validate_service.sh
+  - location: scrpts/validate_service.sh
     timeout: 180
     runas: ec2-user
