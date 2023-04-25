@@ -7,24 +7,24 @@ hooks:
   ApplicattionStop:
     - location: scripts/stop_server.sh
       timeout: 180
-      runas: root
+      runas: ec2-user
       
 AfterInstall:
   - location: scripts/after_install.sh
     timeout: 180
-    runas: root
+    runas: ec2-user
     
 BeforeInstall:
   - location: scripts/install_dependencies.sh
     timeout: 180
-    runas: root
+    runas: ec2-user
     
 ApplicationStart:
   - location: scripts/start_server.sh
     timeout: 180
-    runas: root
+    runas: ec2-user
     
 ValidateService:
   - location: scrpts/validate_service.sh
     timeout: 180
-    runas: root
+    runas: ec2-user
