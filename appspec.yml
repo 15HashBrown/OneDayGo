@@ -3,30 +3,36 @@ os: linux
 files:
   - source: /
     destination: /var/www/html/
+
 permissions:
-  - object: /
+  - object: /var/www/html/scripts/
     pattern: "**"
     owner: ec2-user
     group: ec2-user
-    mode: 777
+    mode: 755
 
 hooks:
   ApplicattionStop:
-    - location: stop_server.sh
+    - location: ./var/www/html/scripts/stop_server.sh
       timeout: 180
-          
-  AfterInstall:
-    - location: after_install.sh
-      timeout: 180
+      runas: ec2-user
       
-  BeforeInstall:
-    - location: install_dependencies.sh
-      timeout: 180
-      
-  ApplicationStart:
-    - location: start_server.sh
-      timeout: 180
+AfterInstall:
+  - location: ./var/www/html/scripts/after_install.sh
+    timeout: 180
+    runas: ec2-user
     
-  ValidateService:
-    - location: validate_service.sh
-      timeout: 180
+BeforeInstall:
+  - location: ./var/www/html/scripts/install_dependencies.sh
+    timeout: 180
+    runas: ec2-user
+    
+ApplicationStart:
+  - location: ./var/www/html/scripts/start_server.sh
+    timeout: 180
+    runas: ec2-user
+    
+ValidateService:
+  - location: ./var/www/html/scrpts/validate_service.sh
+    timeout: 180
+    runas: ec2-user
