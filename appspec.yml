@@ -4,7 +4,7 @@ files:
   - source: /
     destination: /var/www/html/
 permissions:
-  - object: /var/www/html/scripts/
+  - object: /
     pattern: "**"
     owner: ec2-user
     group: ec2-user
