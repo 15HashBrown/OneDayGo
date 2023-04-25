@@ -6,6 +6,8 @@ files:
 permissions:
   - object: /var/www/html/scripts/
     pattern: "**"
+    owner: ec2-user
+    group: ec2-user
     mode: 755
 
 hooks:
@@ -13,18 +15,18 @@ hooks:
     - location: ./var/www/html/scripts/stop_server.sh
       timeout: 180
           
-AfterInstall:
-  - location: ./var/www/html/scripts/after_install.sh
-    timeout: 180
+  AfterInstall:
+    - location: ./var/www/html/scripts/after_install.sh
+      timeout: 180
       
-BeforeInstall:
-  - location: ./var/www/html/scripts/install_dependencies.sh
-    timeout: 180
+  BeforeInstall:
+    - location: ./var/www/html/scripts/install_dependencies.sh
+      timeout: 180
       
-ApplicationStart:
-  - location: ./var/www/html/scripts/start_server.sh
-    timeout: 180
+  ApplicationStart:
+    - location: ./var/www/html/scripts/start_server.sh
+      timeout: 180
     
-ValidateService:
-  - location: ./var/www/html/scrpts/validate_service.sh
-    timeout: 180
+  ValidateService:
+    - location: ./var/www/html/scrpts/validate_service.sh
+      timeout: 180
