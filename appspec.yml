@@ -4,6 +4,14 @@ files:
   - source: /index.html
     destination: /var/www/html/
 
+permissions:
+  - object: scripts/
+    pattern: "**"
+    owner: root
+    group: root
+    mode: 755
+
+
 hooks:
  
 BeforeInstall:
