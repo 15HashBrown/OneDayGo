@@ -3,6 +3,13 @@ os: linux
 files:
   - source: /
     destination: /var/www/html/
+    
+permissions:
+  - object: /
+    pattern: "**"
+    owner: ec2-user
+    group: ec2-user
+    
 hooks:
   ApplicattionStop:
     - location: scripts/stop_server.sh
