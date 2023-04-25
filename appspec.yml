@@ -12,21 +12,21 @@ permissions:
 
 hooks:
   ApplicattionStop:
-    - location: ./stop_server.sh
+    - location: stop_server.sh
       timeout: 180
           
   AfterInstall:
-    - location: ./after_install.sh
+    - location: after_install.sh
       timeout: 180
       
   BeforeInstall:
-    - location: ./install_dependencies.sh
+    - location: install_dependencies.sh
       timeout: 180
       
   ApplicationStart:
-    - location: ./start_server.sh
+    - location: start_server.sh
       timeout: 180
     
   ValidateService:
-    - location: ./validate_service.sh
+    - location: validate_service.sh
       timeout: 180
